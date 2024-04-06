@@ -1,0 +1,11 @@
+---
+- name: Install Vim and Zip
+  hosts: all
+  become: yes
+  tasks:
+    - name: Install Vim and Zip
+      package:
+        name:
+          - vim
+          - zip
+        state: present
